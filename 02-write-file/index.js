@@ -1,34 +1,3 @@
-/*const process = require('process');
-
-const {stdin: input, stdout: output} = require('process');
-const path = require('path');
-const fs = require('fs');
-const readline = require('readline');
-
-const readInterface = readline.createInterface(input, output);
-const writableFile = fs.createWriteStream(path.join(__dirname, "out-text.txt"),);
-
-function readData() {
-  readInterface.question('Сообщение: ', (answer) => {
-  if (('exit'.localeCompare(answer.toString())) === 0) {
-    output.write(`\nДо свидания!`);
-    readInterface.close();
-  } else {
-    output.write(`Строка записана: ${answer}\n`);
-    writableFile.write(`${answer}\n`);
-    readData();
-  }
-});
-}
-
-readData();
-
-readInterface.on('SIGINT', () => {
-  output.write(`\nДо свидания!`);
-  readInterface.close();
-});
-*/
-
 const {stdin: input, stdout: output} = require('process');
 const readline = require('readline');
 const path = require('path');
